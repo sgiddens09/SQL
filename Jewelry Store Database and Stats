@@ -1,0 +1,19 @@
+--Create a jewelry item database
+
+CREATE TABLE store (id INTEGEGER PRIMARY KEY, item TEXT, section TEXT, price INTEGER, popularity INTEGER);
+
+INSERT INTO store VALUES
+(1, "red necklace", "necklaces", 5.99, 3);
+(2, "blue ring", "rings", 2.99, 8);
+(3, "orange bracelet", "bracelets", 3.99, 4);
+(4, "black ring", "rings", 2.99, 4);
+(5, "silver necklace", "necklaces", 8.99, 2);
+
+--display the database ordered by price.
+SELECT * FROM store
+ORDER BY price desc;
+
+--what is the item being purchased the most?
+SELECT item, price, popularity
+FROM store
+ORDER BY popularity desc;
