@@ -1,0 +1,12 @@
+--This is just a list of all the khan challenges I have completed for reference/notes use only.
+
+SELECT title FROM songs;
+
+SELECT title FROM songs
+WHERE mood = "epic"
+OR released >= 1990;
+
+SELECT title FROM songs 
+WHERE mood = "epic" 
+AND released > 1990 
+AND duration < 240;
